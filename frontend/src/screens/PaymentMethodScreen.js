@@ -49,6 +49,7 @@ export default function PaymentMethodScreen() {
           </div>
           <div className="mb-3">
             <Form.Check
+              disabled
               type="radio"
               id="Stripe"
               label="Stripe"
@@ -57,6 +58,7 @@ export default function PaymentMethodScreen() {
               onChange={(e) => setPaymentMethod(e.target.value)}
             />
           </div>
+          <p>⚠ Please Use PayPal</p>
           <div className="mb-3">
             <Button type="submit">Continue</Button>
           </div>
